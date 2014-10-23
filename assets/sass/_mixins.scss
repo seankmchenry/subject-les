@@ -1,0 +1,52 @@
+/*--------------------------------------------------------------
+>>> _mixins.scss
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+Variables
+--------------------------------------------------------------*/
+/* Fonts */
+$sans-serif: sans-serif;
+
+/* Colors */
+$blue: #428BCA;
+$gray-dark: #555;
+$gray-light: #CCC;
+
+/*--------------------------------------------------------------
+Definitions
+--------------------------------------------------------------*/
+/* Fonts */
+$body-font: $sans-serif;
+
+/* Colors */
+$body-color: $gray-dark;
+$border-color: $gray-light;
+$link-color: $blue;
+
+/* Social */
+$facebook: #3C599B;
+$twitter: #5EA9DD;
+
+/*--------------------------------------------------------------
+Effects
+--------------------------------------------------------------*/
+/* Transitions */
+@mixin animate($time: .25s) {
+	-webkit-transition: all $time linear;
+	-moz-transition: all $time linear;
+	-o-transition: all $time linear;
+	transition: all $time linear;
+}
+
+/* Shadows */
+@mixin drop-shadow($color) {
+	-webkit-box-shadow: 0 8px 10px -6px $color;
+	box-shadow: 0 8px 10px -6px $color;
+}
+
+/* Text Effects */
+@mixin antialiased {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}

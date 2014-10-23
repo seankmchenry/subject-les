@@ -1,0 +1,19 @@
+# Include your project-specific ignores in this file
+# Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
+
+# Bower
+bower_components
+
+# Grunt
+node_modules
+
+# Sass
+.sass-cache
+
+# Styles
+assets/css/main.min.css*
+
+# Junk files
+.DS_Store
+Desktop.ini
+Thumbs.db
