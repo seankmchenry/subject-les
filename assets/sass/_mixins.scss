@@ -6,12 +6,13 @@
 Variables
 --------------------------------------------------------------*/
 /* Fonts */
-$sans-serif: sans-serif;
+$sans-serif: 'Roboto', sans-serif;
 
 /* Colors */
-$blue: #428BCA;
 $gray-dark: #555;
 $gray-light: #CCC;
+$periwinkle: #8A939A;
+$red: #B93340;
 
 /*--------------------------------------------------------------
 Definitions
@@ -20,9 +21,10 @@ Definitions
 $body-font: $sans-serif;
 
 /* Colors */
+$accent-color: $periwinkle;
 $body-color: $gray-dark;
 $border-color: $gray-light;
-$link-color: $blue;
+$link-color: $red;
 
 /* Social */
 $facebook: #3C599B;

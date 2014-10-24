@@ -10,16 +10,33 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
+	<footer id="colophon" class="site-footer window" role="contentinfo">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'http://wordpress.org/', '_s' ) ); ?>"><?php printf( __( 'Proudly powered by %s', '_s' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', '_s' ), '_s', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
+			<span>&copy; <?php echo date( 'Y' ); ?> <?php echo bloginfo( 'name' ); ?></span>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
+
+<script type="text/javascript">
+jQuery(document).ready(function($){
+	$('.window').windows({
+		snapping: true,
+		snapSpeed: 500,
+		snapInterval: 1100,
+		onScroll: function(scrollPos){
+			// scrollPos:Number
+		},
+		onSnapComplete: function($el){
+			// after window ($el) snaps into place
+		},
+		onWindowEnter: function($el){
+			// when new window ($el) enters viewport
+		}
+	});
+});
+</script>
 
 </body>
 </html>

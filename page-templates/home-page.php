@@ -7,34 +7,33 @@
 
 get_header(); ?>
 
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-12">
+	<div class="all-windows">
 
-				<div id="primary" class="content-area">
-					<main id="main" class="site-main" role="main">
+		<!-- Top -->
+		<section class="window">
+			<?php get_template_part( 'partials/home/content', 'top' ); ?>
+		</section><!-- .window -->
 
-						<?php while ( have_posts() ) : the_post(); ?>
+		<!-- Menu -->
+		<section class="window">
+			<?php get_template_part( 'partials/home/content', 'menu' ); ?>
+		</section><!-- .window -->
 
-							<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-								<div class="entry-content">
-									<?php the_content(); ?>
-									<?php
-										wp_link_pages( array(
-											'before' => '<div class="page-links">' . __( 'Pages:', '_s' ),
-											'after'  => '</div>',
-										) );
-									?>
-								</div><!-- .entry-content -->
-							</article><!-- #post-## -->
+		<!-- Gallery -->
+		<section class="window">
+			<?php get_template_part( 'partials/home/content', 'gallery' ); ?>
+		</section><!-- .window -->
 
-						<?php endwhile; // end of the loop. ?>
+		<!-- Press -->
+		<section class="window">
+			<?php get_template_part( 'partials/home/content', 'press' ); ?>
+		</section><!-- .window -->
 
-					</main><!-- #main -->
-				</div><!-- #primary -->
+		<!-- Info -->
+		<section class="window">
+			<?php get_template_part( 'partials/home/content', 'info' ); ?>
+		</section><!-- .window -->
 
-			</div><!-- .col-sm-12 -->
-		</div><!-- .row -->
-	</div><!-- .container -->
+	</div><!-- .all-windows -->
 
 <?php get_footer(); ?>
