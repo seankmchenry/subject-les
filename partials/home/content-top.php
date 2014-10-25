@@ -6,9 +6,9 @@
  */
 ?>
 
-<div id="top-area" class="section full-bg">
+<div id="top-area" class="section contrast">
 
-	<div class="container">
+	<div class="sub-section">
 
 		<div class="inner">
 

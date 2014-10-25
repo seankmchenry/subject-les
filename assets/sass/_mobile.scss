@@ -41,16 +41,16 @@ Home Page
 --------------------------------------------------------------*/
 /* Sections */
 .section,
-.container {
+.sub-section {
 	width: 100%;
 	height: 100%;
 }
 .section {
 	text-align: center;
-	padding: 3.0em;
+	padding: 3.0em 0;
 	overflow: hidden;
 	h2 {
-		margin: 0 0 1.0em;
+		margin: 0 0 0.625em;
 		text-transform: uppercase;
 	}
 	/* Contrast */
@@ -58,7 +58,7 @@ Home Page
 		color: $contrast-color;
 	}
 }
-.container {
+.sub-section {
 	display: table;
 }
 .inner {
@@ -68,23 +68,6 @@ Home Page
 	&.no-cell {
 		display: block;
 	}
-}
-.full-bg {
-	&:before {
-		content: "";
-		position: absolute;
-		top: 0; left: 0;
-		width: 100%;
-		height: 100%;
-		background-color: rgba(0, 0, 0, 0.75);
-		z-index: 1;
-	}
-}
-// fix issues with .full bg z-index
-.section h2,
-.container {
-	position: relative;
-	z-index: 999;
 }
 
 /*--------------------------------------------------------------
@@ -120,7 +103,7 @@ Menu Section
 	margin: 0 0 1.5em;
 	padding: 0 0 1.0em;
 	font-family: $menu-font;
-	border-bottom: 1px solid $contrast-color;
+	border-bottom: 1px solid $body-color;
 	li {
 		display: inline;
 		padding: 0 0.75em;
@@ -130,11 +113,19 @@ Menu Section
 		text-transform: uppercase;
 		font-size: 20px;
 		font-size: 2.0rem;
-		color: $contrast-color;
+		color: $body-color;
 		&:hover,
 		&:focus {
 			color: $link-color;
 		}
+	}
+}
+.tab-content {
+	.item {
+		float: left;
+		width: 100%;
+		text-align: left;
+		margin-bottom: 1.0em;
 	}
 }
 
@@ -142,6 +133,14 @@ Menu Section
 Gallery Section
 --------------------------------------------------------------*/
 #gallery-area {
+	background: url('../img/bg-gallery.jpg') left top repeat;
+}
+.slider {
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
 }
 
 /*--------------------------------------------------------------
@@ -157,7 +156,6 @@ Press Section
 Info Section
 --------------------------------------------------------------*/
 #info-area {
-	background: url('../img/bg-info.jpg') left top repeat;
 }
 
 /*--------------------------------------------------------------
@@ -166,4 +164,50 @@ Footer
 .site-footer {
 	padding: 1.0em 0;
 	text-align: center;
+}
+
+/*--------------------------------------------------------------
+Blog
+--------------------------------------------------------------*/
+.wp-caption {
+	position: relative;
+	margin: 0 0 1.5em;
+	.wp-caption-text {
+		background-color: rgba(0, 0, 0, 0.25);
+		color: lighten($body-color, 15%);
+		padding: 0.5em 1.0em;
+		font-size: 14px;
+		font-size: 1.4rem;
+	}
+}
+.entry-meta {
+	.updated { display: none; }
+}
+.entry-footer {
+	.tags-links {
+		display: none;
+	}
+}
+/* Comments */
+.comments-area {
+	textarea {
+		background-color: darken($accent-color, 10%);
+		padding: 0.75em;
+		color: white;
+	}
+}
+/* Button */
+input[type="submit"] {
+	background-color: $link-color;
+	color: white;
+	font-size: 14px;
+	font-size: 1.4rem;
+	padding: 0.5em 0.75em;
+	border: none;
+	border-radius: 2px;
+	&:hover,
+	&:focus {
+		background-color: darken($link-color, 5%);
+		@include animate;
+	}
 }

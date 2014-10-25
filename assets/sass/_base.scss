@@ -17,6 +17,10 @@ textarea {
 	line-height: 1.5;
 }
 
+p {
+	margin-bottom: 1.5em;
+}
+
 b,
 strong {
 	font-weight: bold;
@@ -128,6 +132,28 @@ Menus
 	}
 }
 
+.site-main .comment-navigation,
+.site-main .paging-navigation,
+.site-main .post-navigation {
+	margin: 0 0 1.5em;
+	overflow: hidden;
+}
+
+.comment-navigation .nav-previous,
+.paging-navigation .nav-previous,
+.post-navigation .nav-previous {
+	float: left;
+	width: 50%;
+}
+
+.comment-navigation .nav-next,
+.paging-navigation .nav-next,
+.post-navigation .nav-next {
+	float: right;
+	text-align: right;
+	width: 50%;
+}
+
 /*--------------------------------------------------------------
 Accessibility
 --------------------------------------------------------------*/
@@ -205,6 +231,19 @@ Clearings
 .site-content:after,
 .site-footer:after {
 	clear: both;
+}
+
+/*--------------------------------------------------------------
+Content
+--------------------------------------------------------------*/
+.hentry {
+	margin: 0 0 1.5em;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
 }
 
 /*--------------------------------------------------------------

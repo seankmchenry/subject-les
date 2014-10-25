@@ -6,11 +6,11 @@
  */
 ?>
 
-<div id="info-area" class="section contrast">
+<div id="info-area" class="section">
 
 	<h2>Info</h2>
 
-	<div class="container">
+	<div class="sub-section">
 
 		<div class="inner no-cell"></div>
 

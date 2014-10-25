@@ -20,8 +20,10 @@
 <?php wp_footer(); ?>
 
 <?php if ( is_front_page() ) { ?>
-	<script type="text/javascript">
-	jQuery(document).ready(function($){
+<script type="text/javascript">
+jQuery(document).ready(function($){
+	/* Windows */
+	if ($(window).width() > 767){
 		$('.window').windows({
 			snapping: true,
 			snapSpeed: 500,
@@ -36,8 +38,9 @@
 				// when new window ($el) enters viewport
 			}
 		});
-	});
-	</script>
+	};
+});
+</script>
 <?php } ?>
 
 </body>

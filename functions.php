@@ -73,7 +73,9 @@ function _s_setup() {
 	 *
 	 * @link http://codex.wordpress.org/Function_Reference/add_image_size
 	 */
-	//add_image_size( 'slide', 1280, 520, true );
+	update_option( 'medium_size_w', 600 );
+	update_option( 'medium_size_h', 600 );
+	update_option( 'medium_crop', 0 );
 }
 endif; // _s_setup
 add_action( 'after_setup_theme', '_s_setup' );

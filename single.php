@@ -9,7 +9,7 @@ get_header(); ?>
 
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-offset-3 col-sm-6">
+			<div class="col-sm-offset-2 col-sm-8">
 
 				<div id="primary" class="content-area">
 					<main id="main" class="site-main" role="main">
