@@ -6,9 +6,13 @@
  */
 ?>
 
-<div id="gallery-section" class="section">
+<div id="gallery-area" class="section">
+
+	<h2>Gallery</h2>
 
 	<div class="container">
+
+		<div class="inner"></div>
 
 	</div>
 

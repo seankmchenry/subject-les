@@ -8,3 +8,162 @@ Global
 body {
 	background: url('../img/bg.jpg') left top repeat;
 }
+
+/*--------------------------------------------------------------
+Header
+--------------------------------------------------------------*/
+.site-branding {
+	display: none;
+}
+.main-navigation {
+	position: fixed;
+	top: 0; left: 0;
+	width: 100%;
+	z-index: 9999;
+	padding: 1.0em 0;
+	background-color: rgba(0, 0, 0, 0.75);
+	ul {
+		text-align: center;
+	}
+	li {
+		float: none;
+		display: inline;
+		padding: 0 0.75em;
+	}
+	a {
+		display: inline-block;
+		text-transform: uppercase;
+	}
+}
+
+/*--------------------------------------------------------------
+Home Page
+--------------------------------------------------------------*/
+/* Sections */
+.section,
+.container {
+	width: 100%;
+	height: 100%;
+}
+.section {
+	text-align: center;
+	padding: 3.0em;
+	overflow: hidden;
+	h2 {
+		margin: 0 0 1.0em;
+		text-transform: uppercase;
+	}
+	/* Contrast */
+	&.contrast {
+		color: $contrast-color;
+	}
+}
+.container {
+	display: table;
+}
+.inner {
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+	&.no-cell {
+		display: block;
+	}
+}
+.full-bg {
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0; left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.75);
+		z-index: 1;
+	}
+}
+// fix issues with .full bg z-index
+.section h2,
+.container {
+	position: relative;
+	z-index: 999;
+}
+
+/*--------------------------------------------------------------
+Top Section
+--------------------------------------------------------------*/
+#top-area {
+	background: url('../img/bg-top.jpg') left top no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	.info {
+		font-size: 20px;
+		font-size: 2.0rem;
+		text-transform: uppercase;
+		span {
+			display: block;
+		}
+	}
+}
+#logo {
+	display: block;
+	margin: 0 auto 3.0em;
+	max-width: 350px;
+}
+
+/*--------------------------------------------------------------
+Menu Section
+--------------------------------------------------------------*/
+#menu-area {
+	background: url('../img/bg-menu.jpg') left top repeat;
+}
+.menu-tabs {
+	list-style-type: none;
+	margin: 0 0 1.5em;
+	padding: 0 0 1.0em;
+	font-family: $menu-font;
+	border-bottom: 1px solid $contrast-color;
+	li {
+		display: inline;
+		padding: 0 0.75em;
+	}
+	a {
+		display: inline-block;
+		text-transform: uppercase;
+		font-size: 20px;
+		font-size: 2.0rem;
+		color: $contrast-color;
+		&:hover,
+		&:focus {
+			color: $link-color;
+		}
+	}
+}
+
+/*--------------------------------------------------------------
+Gallery Section
+--------------------------------------------------------------*/
+#gallery-area {
+}
+
+/*--------------------------------------------------------------
+Press Section
+--------------------------------------------------------------*/
+#press-area {
+	background: url('../img/bg-press.jpg') left top no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+/*--------------------------------------------------------------
+Info Section
+--------------------------------------------------------------*/
+#info-area {
+	background: url('../img/bg-info.jpg') left top repeat;
+}
+
+/*--------------------------------------------------------------
+Footer
+--------------------------------------------------------------*/
+.site-footer {
+	padding: 1.0em 0;
+	text-align: center;
+}

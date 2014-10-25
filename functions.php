@@ -42,8 +42,8 @@ function _s_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'main-nav' => __( 'Main Nav', '_s' ),
-		'footer-nav' => __( 'Footer Nav', '_s' ),
+		'home-nav' => __( 'Home Nav', '_s' ),
+		'blog-nav' => __( 'Blog Nav', '_s' ),
 	) );
 
 	/*
@@ -105,8 +105,15 @@ function _s_register_scripts() {
 	wp_register_style( '_s-style', get_stylesheet_uri() );
 	wp_register_style( '_s-main', get_template_directory_uri() . '/assets/css/main.min.css', false, '' );
 
-	wp_register_script( '_s-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), '20120206', true );
+	//wp_register_script( '_s-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), '20120206', true );
 	wp_register_script( '_s-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), '20130115', true );
+
+	/* Bootstrap */
+	wp_register_script( '_s-bootstrap', get_template_directory_uri() . '/assets/js/vendor/bootstrap.min.js', array( 'jquery' ), '', true );
+
+	/* Glide */
+	wp_register_style( '_s-glide', get_template_directory_uri() . '/assets/css/jquery.glide.min.css', false, '' );
+	wp_register_script( '_s-glide', get_template_directory_uri() . '/assets/js/vendor/jquery.glide.min.js', array( 'jquery' ), '', true );
 
 	/* Modernizr */
 	wp_register_script( '_s-modernizr', get_template_directory_uri() . '/assets/js/vendor/modernizr.js', '', '2.8.3', false );
@@ -136,7 +143,11 @@ function _s_enqueue_scripts() {
 
 	/* Home Page */
 	if ( is_page_template( 'page-templates/home-page.php' ) ) {
+		wp_enqueue_script( '_s-bootstrap' );
 		wp_enqueue_script( '_s-windows' );
+		/* Glide */
+		wp_enqueue_style( '_s-glide' );
+		wp_enqueue_script( '_s-glide' );
 	}
 
 }

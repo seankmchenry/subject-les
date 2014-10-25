@@ -10,7 +10,7 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer window" role="contentinfo">
+	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
 			<span>&copy; <?php echo date( 'Y' ); ?> <?php echo bloginfo( 'name' ); ?></span>
 		</div><!-- .site-info -->
@@ -19,24 +19,26 @@
 
 <?php wp_footer(); ?>
 
-<script type="text/javascript">
-jQuery(document).ready(function($){
-	$('.window').windows({
-		snapping: true,
-		snapSpeed: 500,
-		snapInterval: 1100,
-		onScroll: function(scrollPos){
-			// scrollPos:Number
-		},
-		onSnapComplete: function($el){
-			// after window ($el) snaps into place
-		},
-		onWindowEnter: function($el){
-			// when new window ($el) enters viewport
-		}
+<?php if ( is_front_page() ) { ?>
+	<script type="text/javascript">
+	jQuery(document).ready(function($){
+		$('.window').windows({
+			snapping: true,
+			snapSpeed: 500,
+			snapInterval: 1100,
+			onScroll: function(scrollPos){
+				// scrollPos:Number
+			},
+			onSnapComplete: function($el){
+				// after window ($el) snaps into place
+			},
+			onWindowEnter: function($el){
+				// when new window ($el) enters viewport
+			}
+		});
 	});
-});
-</script>
+	</script>
+<?php } ?>
 
 </body>
 </html>

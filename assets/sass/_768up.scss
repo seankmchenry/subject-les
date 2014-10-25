@@ -6,107 +6,79 @@
 Header
 --------------------------------------------------------------*/
 
-.site-header {
-	position: fixed;
-	top: 0;
-}
-
 
 /*--------------------------------------------------------------
 Home Page
 --------------------------------------------------------------*/
-
 /* Windows */
 .window {
+	position: absolute;
 	width: 100%;
 	height: 100%;
-	position: absolute;
 }
-.window:nth-child(2) {
+#menu {
 	top: 100%;
 }
-.window:nth-child(3) {
+#gallery {
 	top: 200%;
 }
-.window:nth-child(4) {
+#press {
 	top: 300%;
 }
-.window:nth-child(5) {
+#info {
 	top: 400%;
-}
-.site-footer {
-	height: auto;
-	top: 500% !important;
 }
 
 /* Sections */
 .section {
-	display: table;
-	width: 100%;
-	height: 100%;
-	width: 100%;
-	text-align: center;
-}
-.container {
-	display: table-cell;
-	vertical-align: middle;
-	position: relative;
-	z-index: 300;
-	width: 100%;
+	padding: 6.0em;
+	h2 {
+		font-size: 48px;
+		font-size: 4.8rem;
+	}
 }
 
 /*--------------------------------------------------------------
 Top Section
 --------------------------------------------------------------*/
-#top-section {
-	background: url('../img/bg-top.jpg') left top no-repeat;
-	background-size: cover;
-	&:before {
-		content: "";
-		position: absolute;
-		top: 0; left: 0;
-		width: 100%;
-		height: 100%;
-		background-color: rgba(0, 0, 0, 0.75);
-	}
+#top {
 }
 #logo {
-	display: block;
-	margin: 0 auto 3.0em;
 	max-width: 475px;
-}
-.info {
-	color: white;
-	font-size: 20px;
-	font-size: 2.0rem;
-	text-transform: uppercase;
-	span {
-		display: block;
-	}
 }
 
 /*--------------------------------------------------------------
 Menu Section
 --------------------------------------------------------------*/
-#menu-section {
-	background: url('../img/bg-menu.jpg') left top repeat;
+#menu {
 }
 
 /*--------------------------------------------------------------
 Gallery Section
 --------------------------------------------------------------*/
-
+#gallery {
+}
 
 /*--------------------------------------------------------------
 Press Section
 --------------------------------------------------------------*/
-#press-section {
-	background: url('../img/bg-press.jpg') left top repeat;
+#press {
 }
 
 /*--------------------------------------------------------------
 Info Section
 --------------------------------------------------------------*/
-#info-section {
-	background: url('../img/bg-info.jpg') left top repeat;
+#info {
+}
+
+/*--------------------------------------------------------------
+Footer
+--------------------------------------------------------------*/
+body.home {
+	.site-footer {
+		position: absolute;
+		top: 500% !important;
+		width: 100%;
+		height: auto;
+	}
 }

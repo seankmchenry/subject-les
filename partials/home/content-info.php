@@ -6,9 +6,13 @@
  */
 ?>
 
-<div id="info-section" class="section">
+<div id="info-area" class="section contrast">
+
+	<h2>Info</h2>
 
 	<div class="container">
+
+		<div class="inner no-cell"></div>
 
 	</div>
 

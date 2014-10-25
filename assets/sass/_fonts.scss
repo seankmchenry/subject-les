@@ -2,15 +2,27 @@
 >>> _fonts.scss
 --------------------------------------------------------------*/
 
+/* Apercu Mono */
+@font-face {
+	font-family: 'Apercu Mono';
+	src: url("../fonts/apercu-mono-webfont.eot");
+	src: url("../fonts/apercu-mono-webfont.eot#iefix") format('embedded-opentype'),
+		 url("../fonts/apercu-mono-webfont.woff") format('woff'),
+		 url("../fonts/apercu-mono-webfont.ttf") format('truetype'),
+		 url("../fonts/apercu-mono-webfont.svg#fontello") format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 /* Fontello */
 $version: "";
 @font-face {
 	font-family: 'fontello';
-	src: url('../fonts/fontello.eot?@{version}');
-	src: url('../fonts/fontello.eot?@{version}#iefix') format('embedded-opentype'),
-		 url('../fonts/fontello.woff?@{version}') format('woff'),
-		 url('../fonts/fontello.ttf?@{version}') format('truetype'),
-		 url('../fonts/fontello.svg?@{version}#fontello') format('svg');
+	src: url('../fonts/fontello.eot?90673204');
+	src: url('../fonts/fontello.eot?90673204#iefix') format('embedded-opentype'),
+		 url('../fonts/fontello.woff?90673204') format('woff'),
+		 url('../fonts/fontello.ttf?90673204') format('truetype'),
+		 url('../fonts/fontello.svg?90673204#fontello') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -54,3 +66,15 @@ $version: "";
 	/* Uncomment for 3D effect */
 	/* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
+.icon-youtube:before { content: '\e803'; } /* '' */
+.icon-yelp:before { content: '\79'; } /* 'y' */
+.icon-menu:before { content: '\2630'; } /* '☰' */
+.icon-quote:before { content: '\275e'; } /* '❞' */
+.icon-location:before { content: '\e724'; } /* '' */
+.icon-left-circled:before { content: '\e802'; } /* '' */
+.icon-right-circled:before { content: '\e804'; } /* '' */
+.icon-twitter:before { content: '\e800'; } /* '' */
+.icon-facebook:before { content: '\e801'; } /* '' */
+.icon-gplus:before { content: '\f30f'; } /* '' */
+.icon-instagram:before { content: '\e805'; } /* '' */
+.icon-mobile:before { content: '\1f4f1'; } /* '' */

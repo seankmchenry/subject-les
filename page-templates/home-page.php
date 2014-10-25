@@ -10,27 +10,27 @@ get_header(); ?>
 	<div class="all-windows">
 
 		<!-- Top -->
-		<section class="window">
+		<section id="top" class="window">
 			<?php get_template_part( 'partials/home/content', 'top' ); ?>
 		</section><!-- .window -->
 
 		<!-- Menu -->
-		<section class="window">
+		<section id="menu" class="window">
 			<?php get_template_part( 'partials/home/content', 'menu' ); ?>
 		</section><!-- .window -->
 
 		<!-- Gallery -->
-		<section class="window">
+		<section id="gallery" class="window">
 			<?php get_template_part( 'partials/home/content', 'gallery' ); ?>
 		</section><!-- .window -->
 
 		<!-- Press -->
-		<section class="window">
+		<section id="press" class="window">
 			<?php get_template_part( 'partials/home/content', 'press' ); ?>
 		</section><!-- .window -->
 
 		<!-- Info -->
-		<section class="window">
+		<section id="info" class="window">
 			<?php get_template_part( 'partials/home/content', 'info' ); ?>
 		</section><!-- .window -->
 

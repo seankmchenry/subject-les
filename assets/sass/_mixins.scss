@@ -7,22 +7,26 @@ Variables
 --------------------------------------------------------------*/
 /* Fonts */
 $sans-serif: 'Roboto', sans-serif;
+$alt-sans: 'Apercu Mono', 'Roboto', sans-serif;
 
 /* Colors */
-$gray-dark: #555;
+$gray-dark: #333;
 $gray-light: #CCC;
 $periwinkle: #8A939A;
 $red: #B93340;
+$white: #FFF;
 
 /*--------------------------------------------------------------
 Definitions
 --------------------------------------------------------------*/
 /* Fonts */
 $body-font: $sans-serif;
+$menu-font: $alt-sans;
 
 /* Colors */
 $accent-color: $periwinkle;
-$body-color: $gray-dark;
+$body-color: $white;
+$contrast-color: $gray-dark;
 $border-color: $gray-light;
 $link-color: $red;
 
