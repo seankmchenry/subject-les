@@ -12,26 +12,24 @@ get_header(); ?>
 		<?php get_template_part( 'partials/home/content', 'top' ); ?>
 	</div><!-- .section -->
 
-	<section class="other-sections">
-		<!-- Menu -->
-		<div id="menu" class="section menu-section">
-			<?php get_template_part( 'partials/home/content', 'menu' ); ?>
-		</div><!-- .section -->
+	<!-- Menu -->
+	<div id="menu" class="section menu-section">
+		<?php get_template_part( 'partials/home/content', 'menu' ); ?>
+	</div><!-- .section -->
 
-		<!-- Gallery -->
-		<div id="gallery" class="section gallery-section contrast">
-			<?php get_template_part( 'partials/home/content', 'gallery' ); ?>
-		</div><!-- .section -->
+	<!-- Gallery -->
+	<div id="gallery" class="section gallery-section contrast">
+		<?php get_template_part( 'partials/home/content', 'gallery' ); ?>
+	</div><!-- .section -->
 
-		<!-- Press -->
-		<div id="press" class="section press-section contrast">
-			<?php get_template_part( 'partials/home/content', 'press' ); ?>
-		</div><!-- .section -->
+	<!-- Press -->
+	<div id="press" class="section press-section contrast">
+		<?php get_template_part( 'partials/home/content', 'press' ); ?>
+	</div><!-- .section -->
 
-		<!-- Info -->
-		<div id="info" class="section info-section">
-			<?php get_template_part( 'partials/home/content', 'info' ); ?>
-		</div><!-- .section -->
-	</section>
+	<!-- Info -->
+	<div id="info" class="section info-section">
+		<?php get_template_part( 'partials/home/content', 'info' ); ?>
+	</div><!-- .section -->
 
 <?php get_footer(); ?>

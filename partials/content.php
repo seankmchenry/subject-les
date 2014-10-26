@@ -12,7 +12,7 @@
 	<div class="entry-content">
 		<?php /* Image */
 		if ( has_post_thumbnail() ) {
-			the_post_thumbnail( 'thumbnail', array( 'class' => 'alignright' ) );
+			the_post_thumbnail( 'thumbnail', array( 'class' => 'alignleft' ) );
 		} ?>
 
 		<?php /* Excerpt */
@@ -27,8 +27,4 @@
 			) );
 		?>
 	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php _s_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->

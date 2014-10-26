@@ -14,7 +14,7 @@
 
 			<?php /* Gallery */
 			if ( have_rows( 'image_gallery' ) ) { ?>
-				<div class="slider">
+				<div id="gallery-slider" class="slider">
 					<ul class="slider__wrapper">
 						<?php while( have_rows( 'image_gallery') ): the_row(); ?>
 							<li class="slider__item">
