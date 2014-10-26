@@ -10,6 +10,10 @@ jQuery(document).ready(function($){
 	var $height = x + 'px';
 	$(".top-section").css("height", $height);
 	$(".section").css("min-height", $height);
+	// apply height on desktop only
+	if ($(window).width() > 767) {
+		$(".press-section").css("height", $height);
+	}
 
 	/* Glide */
 	$('#gallery-slider').glide({
@@ -19,7 +23,7 @@ jQuery(document).ready(function($){
 		navigation: false,
 	});
 	$('#press-slider').glide({
-		arrows: true,
+		arrows: false,
 		autoplay: 7000,
 		hoverpause: true,
 		keyboard: false,

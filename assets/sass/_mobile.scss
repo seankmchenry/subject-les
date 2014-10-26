@@ -59,11 +59,11 @@ body.home {
 /* Sections */
 .section {
 	text-align: center;
-	padding: 3.0em 0;
+	padding: 4.0em 0;
 	h2 {
 		font-family: $menu-font;
-		font-size: 36px;
-		font-size: 3.6rem;
+		font-size: 42px;
+		font-size: 4.2rem;
 		margin: 0 0 1.25em;
 		text-transform: uppercase;
 	}
@@ -93,12 +93,12 @@ Top Section
 		}
 	}
 }
-.sub-section {
+.vert-aligner {
 	display: table;
 	width: 100%;
 	height: 100%;
 }
-.inner {
+.aligned {
 	display: table-cell;
 	vertical-align: middle;
 	width: 100%;
@@ -162,11 +162,9 @@ Press Section
 	background-size: cover;
 	background-attachment: fixed;
 }
-.excerpt-area {
-}
 .excerpt {
-	font-size: 20px;
-	font-size: 2.0rem;
+	font-size: 24px;
+	font-size: 2.4rem;
 	p {
 		margin-bottom: 0.75em;
 	}

@@ -6,8 +6,8 @@
  */
 ?>
 
-<div class="sub-section">
-	<div class="inner">
+<div class="vert-aligner">
+	<div class="aligned">
 
 		<!-- Logo -->
 		<img id="logo" src="<?php bloginfo( 'template_directory' ); ?>/assets/img/logo.png" alt="<?php bloginfo( 'name' ); ?>" />
