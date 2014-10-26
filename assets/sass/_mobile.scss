@@ -60,7 +60,7 @@ Home Page
 /*--------------------------------------------------------------
 Top Section
 --------------------------------------------------------------*/
-#top-area {
+.top-section {
 	background: url('../img/bg-top.jpg') left top no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -82,7 +82,7 @@ Top Section
 /*--------------------------------------------------------------
 Menu Section
 --------------------------------------------------------------*/
-#menu-area {
+.menu-section {
 	background: url('../img/bg-menu.jpg') left top repeat;
 }
 .menu-tabs {
@@ -119,7 +119,7 @@ Menu Section
 /*--------------------------------------------------------------
 Gallery Section
 --------------------------------------------------------------*/
-#gallery-area {
+.gallery-section {
 	background: url('../img/bg-gallery.jpg') left top repeat;
 }
 .slider {
@@ -133,7 +133,7 @@ Gallery Section
 /*--------------------------------------------------------------
 Press Section
 --------------------------------------------------------------*/
-#press-area {
+.press-section {
 	background: url('../img/bg-press.jpg') left top no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -142,7 +142,7 @@ Press Section
 /*--------------------------------------------------------------
 Info Section
 --------------------------------------------------------------*/
-#info-area {
+.info-section {
 }
 
 /*--------------------------------------------------------------

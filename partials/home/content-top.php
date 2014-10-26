@@ -6,29 +6,25 @@
  */
 ?>
 
-<div id="top-area" class="section contrast">
+<div class="sub-section">
+	<div class="inner">
 
-	<div class="sub-section">
-		<div class="inner">
+		<!-- Logo -->
+		<img id="logo" src="<?php bloginfo( 'template_directory' ); ?>/assets/img/logo.png" alt="<?php bloginfo( 'name' ); ?>" />
 
-			<!-- Logo -->
-			<img id="logo" src="<?php bloginfo( 'template_directory' ); ?>/assets/img/logo.png" alt="<?php bloginfo( 'name' ); ?>" />
+		<div class="info">
+			<!-- Street Address -->
+			<?php if ( get_field( 'street_address' ) ) { ?>
+				<span><?php the_field( 'street_address' ); ?></span>
+			<?php } ?>
 
-			<div class="info">
-				<!-- Street Address -->
-				<?php if ( get_field( 'street_address' ) ) { ?>
-					<span><?php the_field( 'street_address' ); ?></span>
-				<?php } ?>
+			<!-- Phone Number -->
+			<?php if ( get_field( 'phone_number' ) ) {
+				$num_raw = get_field( 'phone_number' );
+				$num = preg_replace( '/\D/', '', $num_raw ); ?>
+				<span><a href="tel:<?php echo $num; ?>"><?php echo $num_raw; ?></a></span>
+			<?php } ?>
+		</div>
 
-				<!-- Phone Number -->
-				<?php if ( get_field( 'phone_number' ) ) {
-					$num_raw = get_field( 'phone_number' );
-					$num = preg_replace( '/\D/', '', $num_raw ); ?>
-					<span><a href="tel:<?php echo $num; ?>"><?php echo $num_raw; ?></a></span>
-				<?php } ?>
-			</div>
-
-		</div><!-- .inner -->
-	</div><!-- .sub-section -->
-
-</div><!-- #top-section -->
+	</div><!-- .inner -->
+</div><!-- .sub-section -->

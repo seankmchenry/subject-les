@@ -8,28 +8,30 @@
 get_header(); ?>
 
 	<!-- Top -->
-	<section id="top" class="window">
+	<div id="top" class="section top-section contrast">
 		<?php get_template_part( 'partials/home/content', 'top' ); ?>
-	</section><!-- .window -->
+	</div><!-- .section -->
 
-	<!-- Menu -->
-	<section id="menu" class="window">
-		<?php get_template_part( 'partials/home/content', 'menu' ); ?>
-	</section><!-- .window -->
+	<section class="other-sections">
+		<!-- Menu -->
+		<div id="menu" class="section menu-section">
+			<?php get_template_part( 'partials/home/content', 'menu' ); ?>
+		</div><!-- .section -->
 
-	<!-- Gallery -->
-	<section id="gallery" class="window">
-		<?php get_template_part( 'partials/home/content', 'gallery' ); ?>
-	</section><!-- .window -->
+		<!-- Gallery -->
+		<div id="gallery" class="section gallery-section contrast">
+			<?php get_template_part( 'partials/home/content', 'gallery' ); ?>
+		</div><!-- .section -->
 
-	<!-- Press -->
-	<section id="press" class="window">
-		<?php get_template_part( 'partials/home/content', 'press' ); ?>
-	</section><!-- .window -->
+		<!-- Press -->
+		<div id="press" class="section press-section contrast">
+			<?php get_template_part( 'partials/home/content', 'press' ); ?>
+		</div><!-- .section -->
 
-	<!-- Info -->
-	<section id="info" class="window">
-		<?php get_template_part( 'partials/home/content', 'info' ); ?>
-	</section><!-- .window -->
+		<!-- Info -->
+		<div id="info" class="section info-section">
+			<?php get_template_part( 'partials/home/content', 'info' ); ?>
+		</div><!-- .section -->
+	</section>
 
 <?php get_footer(); ?>
