@@ -189,8 +189,11 @@ Info Section
 		line-height: 1.75;
 	}
 }
+.info-area {
+	margin-bottom: 2.0em;
+}
 #map {
-	margin: 1.5em 0 0;
+	margin: 1.0em 0 0;
 	@include drop-shadow(#666);
 	#content {
 		overflow: hidden;
