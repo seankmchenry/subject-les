@@ -76,15 +76,15 @@ Gallery Section
 Press Section
 --------------------------------------------------------------*/
 .press-section {
+	h2 {
+		margin-bottom: 0;
+	}
 	.slider__arrows-item--right {
 		right: 0;
 	}
 	.slider__arrows-item--left {
 		left: 0;
 	}
-}
-#press-slider {
-	margin: -4.0em 0 0;
 }
 .excerpt {
 	font-size: 28px;

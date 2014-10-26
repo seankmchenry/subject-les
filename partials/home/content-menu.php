@@ -35,7 +35,7 @@
 			<div class="tab-content">
 				<?php /* Beer */
 				if ( have_rows( 'beers' ) ) { ?>
-					<div id="beer" class="tab-pane active">
+					<div id="beer" class="tab-pane fade in active">
 						<?php while( have_rows( 'beers') ): the_row(); ?>
 							<div class="item">
 								<!-- Brewery -->
@@ -56,7 +56,7 @@
 
 				<?php /* Beer+Shot */
 				if ( have_rows( 'beer_and_shot_combos' ) ) { ?>
-					<div id="beer-shot" class="tab-pane">
+					<div id="beer-shot" class="tab-pane fade">
 						<?php while( have_rows( 'beer_and_shot_combos') ): the_row(); ?>
 							<div class="item">
 								<!-- Combo -->
@@ -74,7 +74,7 @@
 
 				<?php /* Wine */
 				if ( have_rows( 'wines' ) ) { ?>
-					<div id="wine" class="tab-pane">
+					<div id="wine" class="tab-pane fade">
 						<?php while( have_rows( 'wines') ): the_row(); ?>
 							<div class="item">
 								<!-- Wine -->
@@ -90,7 +90,7 @@
 
 				<?php /* Food */
 				if ( have_rows( 'food' ) ) { ?>
-					<div id="food" class="tab-pane">
+					<div id="food" class="tab-pane fade">
 						<?php while( have_rows( 'food') ): the_row(); ?>
 							<div class="item">
 								<!-- Item -->
@@ -105,14 +105,14 @@
 						<?php endwhile; ?>
 					</div>
 				<?php } else { ?>
-					<div id="food" class="tab-pane">
+					<div id="food" class="tab-pane fade">
 						<span>** Under Construction **</span>
 					</div>
 				<?php } ?>
 
 				<?php /* Cocktails */
 				if ( have_rows( 'cocktails' ) ) { ?>
-					<div id="cocktails" class="tab-pane">
+					<div id="cocktails" class="tab-pane fade">
 						<?php while( have_rows( 'cocktails') ): the_row(); ?>
 							<div class="item">
 								<!-- Cocktail -->
