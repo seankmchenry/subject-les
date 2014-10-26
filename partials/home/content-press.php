@@ -10,10 +10,12 @@
 
 	<h2>Press</h2>
 
-	<div class="sub-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-offset-1 col-sm-10">
 
-		<div class="inner"></div>
-
-	</div>
+			</div><!-- .col-sm-10 -->
+		</div><!-- .row -->
+	</div><!-- .container -->
 
 </div><!-- #press-section -->

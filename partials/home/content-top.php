@@ -9,7 +9,6 @@
 <div id="top-area" class="section contrast">
 
 	<div class="sub-section">
-
 		<div class="inner">
 
 			<!-- Logo -->
@@ -29,8 +28,7 @@
 				<?php } ?>
 			</div>
 
-		</div>
-
-	</div>
+		</div><!-- .inner -->
+	</div><!-- .sub-section -->
 
 </div><!-- #top-section -->

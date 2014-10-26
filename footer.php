@@ -19,29 +19,15 @@
 
 <?php wp_footer(); ?>
 
-<?php if ( is_front_page() ) { ?>
-<script type="text/javascript">
+<script>
 jQuery(document).ready(function($){
-	/* Windows */
-	if ($(window).width() > 767){
-		$('.window').windows({
-			snapping: true,
-			snapSpeed: 500,
-			snapInterval: 1100,
-			onScroll: function(scrollPos){
-				// scrollPos:Number
-			},
-			onSnapComplete: function($el){
-				// after window ($el) snaps into place
-			},
-			onWindowEnter: function($el){
-				// when new window ($el) enters viewport
-			}
-		});
+	if ($(window).width() > 767) {
+		var x = $( window ).height();
+		var $height = x + 'px';
+		$("#top-area").css("height", $height);
 	};
 });
 </script>
-<?php } ?>
 
 </body>
 </html>

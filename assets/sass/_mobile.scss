@@ -35,39 +35,26 @@ Header
 		text-transform: uppercase;
 	}
 }
+.menu-toggle {
+}
 
 /*--------------------------------------------------------------
 Home Page
 --------------------------------------------------------------*/
 /* Sections */
-.section,
-.sub-section {
-	width: 100%;
-	height: 100%;
-}
 .section {
 	text-align: center;
 	padding: 3.0em 0;
-	overflow: hidden;
 	h2 {
-		margin: 0 0 0.625em;
+		font-size: 36px;
+		font-size: 3.6rem;
+		margin: 0 0 1.25em;
 		text-transform: uppercase;
 	}
-	/* Contrast */
-	&.contrast {
-		color: $contrast-color;
-	}
 }
-.sub-section {
-	display: table;
-}
-.inner {
-	display: table-cell;
-	vertical-align: middle;
-	width: 100%;
-	&.no-cell {
-		display: block;
-	}
+/* Contrast */
+.section.contrast {
+	color: $contrast-color;
 }
 
 /*--------------------------------------------------------------
