@@ -19,15 +19,5 @@
 
 <?php wp_footer(); ?>
 
-<script>
-jQuery(document).ready(function($){
-	if ($(window).width() > 767) {
-		var x = $( window ).height();
-		var $height = x + 'px';
-		$("#top-area").css("height", $height);
-	};
-});
-</script>
-
 </body>
 </html>
