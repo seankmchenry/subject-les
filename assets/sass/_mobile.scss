@@ -138,6 +138,27 @@ div.contrast {
 	content: '\e804';
 }
 
+/* 404 */
+.page-header {
+	border-color: $accent-color;
+}
+.search-form {
+	input[type="search"] {
+		background-color: darken($accent-color, 10%);
+		color: white;
+		padding: 0.35em 0.5em;
+		border: none;
+	}
+}
+.widget {
+	select {
+		background-color: darken($accent-color, 10%);
+		color: white;
+		padding: 0.25em;
+		border: 1px solid darken($accent-color, 15%);
+	}
+}
+
 /*--------------------------------------------------------------
 Top Section
 --------------------------------------------------------------*/
@@ -211,11 +232,20 @@ Menu Section
 }
 .tab-content {
 	overflow: hidden;
+	font-family: $menu-font;
 	.item {
 		float: left;
 		width: 100%;
 		text-align: left;
 		margin-bottom: 1.0em;
+	}
+	.brand, .name {
+		text-transform: uppercase;
+	}
+	.price:after {
+		content: "";
+		display: table;
+		clear: both;
 	}
 }
 
@@ -257,6 +287,9 @@ Info Section
 	}
 	.stations {
 		line-height: 1.75;
+	}
+	.notes {
+		padding: 0 25%;
 	}
 }
 .info-area {
@@ -356,6 +389,7 @@ body.blog {
 		background-color: darken($accent-color, 10%);
 		padding: 0.75em;
 		color: white;
+		border: none;
 	}
 	input {
 		padding: 0.5em;

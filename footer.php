@@ -21,7 +21,7 @@
 							<span>&copy; <?php echo date( 'Y' ); ?> <?php echo bloginfo( 'name' ); ?></span>
 						</div>
 						<div class="col-sm-4 footer-section">
-							<ul class="social-button">
+							<ul class="social-buttons">
 							</ul>
 						</div>
 						<div class="col-sm-4 footer-section align-right">

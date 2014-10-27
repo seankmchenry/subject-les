@@ -32,9 +32,9 @@ get_header(); ?>
 					</main><!-- #main -->
 				</div><!-- #primary -->
 
-			</div>
-		</div>
-	</div>
+			</div><!-- .col-sm-8 -->
+		</div><!-- .row -->
+	</div><!-- .container -->
 
 <?php //get_sidebar(); ?>
 <?php get_footer(); ?>

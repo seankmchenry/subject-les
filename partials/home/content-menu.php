@@ -80,7 +80,7 @@
 								<!-- Wine -->
 								<span class="name"><?php the_sub_field( 'wine_name' ); ?></span>
 								<!-- Region -->
-								<span class="info">/<?php the_sub_field( 'source_region' ); ?></span>
+								<span class="info">&ndash; <?php the_sub_field( 'source_region' ); ?></span>
 								<!-- Price -->
 								<span class="price">/<?php the_sub_field( 'wine_price' ); ?></span>
 							</div>
