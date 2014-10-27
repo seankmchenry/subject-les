@@ -30,19 +30,19 @@
 								$home = get_page_by_path( 'home' )->ID;
 								/* Faceboook */
 								if ( get_field( 'facebook_link', $home ) ) { ?>
-									<li><a class="icon-facebook" href="<?php the_field( 'facebook_link', $home ); ?>"></a></li>
+									<li><a class="icon-facebook" href="<?php the_field( 'facebook_link', $home ); ?>" target="_blank"></a></li>
 								<?php }
 								/* Twitter */
 								if ( get_field( 'twitter_link', $home ) ) { ?>
-									<li><a class="icon-twitter" href="<?php the_field( 'twitter_link', $home ); ?>"></a></li>
+									<li><a class="icon-twitter" href="<?php the_field( 'twitter_link', $home ); ?>" target="_blank"></a></li>
 								<?php }
 								/* Instagram */
 								if ( get_field( 'instagram_link', $home ) ) { ?>
-									<li><a class="icon-instagram" href="<?php the_field( 'instagram_link', $home ); ?>"></a></li>
+									<li><a class="icon-instagram" href="<?php the_field( 'instagram_link', $home ); ?>" target="_blank"></a></li>
 								<?php }
 								/* Yelp */
 								if ( get_field( 'yelp_link', $home ) ) { ?>
-									<li><a class="icon-yelp" href="<?php the_field( 'yelp_link', $home ); ?>"></a></li>
+									<li><a class="icon-yelp" href="<?php the_field( 'yelp_link', $home ); ?>" target="_blank"></a></li>
 								<?php } ?>
 							</ul>
 						</div>
@@ -59,7 +59,7 @@
 
 <script>
 /* Headroom */
-var myElement = document.querySelector(".site-header");
+var myElement = document.getElementById("masthead");
 var headroom  = new Headroom(myElement);
 headroom.init();
 </script>
