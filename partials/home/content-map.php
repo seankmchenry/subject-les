@@ -17,7 +17,7 @@ $street = get_field( 'street_address' );
 $city_state_zip = get_field( 'city_state_and_zip' ); ?>
 
 <div id="map" style="width: 100%; height: 375px;"></div>
-<script src="http://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script>
+<script src="//maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script>
 
 <script type="text/javascript">
 //<![CDATA[

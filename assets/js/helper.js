@@ -15,6 +15,18 @@ jQuery(document).ready(function($){
 		$(".press-section").css("height", $height);
 	}
 
+	/* Smooth Scrolling */
+	// hat-tip: http://goo.gl/rUOedd
+	$("#site-navigation li a[href^='#']").on('click', function(e) {
+		e.preventDefault();
+		var hash = this.hash;
+		$('html, body').animate({
+			scrollTop: $(this.hash).offset().top
+		}, 300, function(){
+			window.location.hash = hash;
+		});
+	});
+
 	/* Glide */
 	$('#gallery-slider').glide({
 		autoplay: 7000,

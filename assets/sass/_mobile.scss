@@ -7,6 +7,7 @@ Global
 --------------------------------------------------------------*/
 body {
 	background: url('../img/bg.jpg') left top repeat;
+	position: relative;
 }
 .site-content {
 	padding: 4.5em 0;
@@ -39,10 +40,19 @@ Header
 		float: none;
 		display: inline;
 		padding: 0 0.75em;
+		&.active {
+			a {
+				color: lighten($link-color, 10%);
+			}
+		}
 	}
 	a {
 		display: inline-block;
 		text-transform: uppercase;
+		&:hover,
+		&:focus {
+			color: lighten($link-color, 10%);
+		}
 	}
 }
 .menu-toggle {

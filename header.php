@@ -25,7 +25,7 @@
 <![endif]-->
 
 <!-- Google fonts -->
-<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,700' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Roboto:400,300,400italic,700' rel='stylesheet' type='text/css'>
 
 <!-- Favicons -->
 <link rel="apple-touch-icon-precomposed" href="<?php bloginfo( 'template_directory' ); ?>/assets/img/icons/favicon-152.png">
@@ -35,7 +35,7 @@
 <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> data-spy="scroll" data-target=".main-nav">
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', '_s' ); ?></a>
 
@@ -52,7 +52,14 @@
 			} else {
 				$menu = 'blog-nav';
 			}
-			wp_nav_menu( array( 'theme_location' => $menu ) ); ?>
+			// set up menu arguments
+			$args = array(
+				'theme_location' => $menu,
+				'container_class' => 'main-nav',
+				'menu_class' => 'nav',
+			);
+			/* Menu */
+			wp_nav_menu( $args ); ?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
