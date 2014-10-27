@@ -7,12 +7,12 @@
 jQuery(document).ready(function($){
 	/* Top Section */
 	var x = $( window ).height();
-	var $height = x + 'px';
-	$(".top-section").css("height", $height);
+	var height = x + 'px';
+	$(".top-section").css("height", height);
 	// apply height on desktop only
 	if ($(window).width() > 767) {
-		//$(".section").css("min-height", $height);
-		$(".press-section").css("height", $height);
+		//$(".section").css("min-height", height);
+		$(".press-section").css("height", height);
 	}
 
 	/* Smooth Scrolling */
@@ -33,6 +33,8 @@ jQuery(document).ready(function($){
 		hoverpause: true,
 		keyboard: true,
 		navigation: false,
+		arrowLeftText: '',
+		arrowRightText: '',
 	});
 	$('#press-slider').glide({
 		arrows: false,

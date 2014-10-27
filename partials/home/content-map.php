@@ -16,7 +16,7 @@ $bar_name = get_bloginfo( 'name' );
 $street = get_field( 'street_address' );
 $city_state_zip = get_field( 'city_state_and_zip' ); ?>
 
-<div id="map" style="width: 100%; height: 375px;"></div>
+<div id="location" style="width: 100%; height: 375px;"></div>
 <script src="//maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script>
 
 <script type="text/javascript">
@@ -34,7 +34,7 @@ function _s_google_map() {
 		scrollwheel: false
 	};
 	//draw a map
-	var map = new google.maps.Map(document.getElementById("map"), myOptions);
+	var map = new google.maps.Map(document.getElementById("location"), myOptions);
 	var marker = new google.maps.Marker({
 		position: map.getCenter(),
 		map: map

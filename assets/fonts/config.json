@@ -3,16 +3,18 @@
   "css_prefix_text": "icon-",
   "css_use_suffix": false,
   "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
   "glyphs": [
     {
-      "uid": "6855131631509e8795730ce062045ea1",
-      "css": "left-circled",
+      "uid": "9dc654095085167524602c9acc0c5570",
+      "css": "left-dir",
       "code": 59394,
       "src": "fontawesome"
     },
     {
-      "uid": "19b04848ae7332d2c0ea2a9e19064037",
-      "css": "right-circled",
+      "uid": "fb1c799ffe5bf8fb7f8bcb647c8fe9e6",
+      "css": "right-dir",
       "code": 59396,
       "src": "fontawesome"
     },
@@ -20,12 +22,6 @@
       "uid": "2cfb3f2b46b34a1790aec0aa846297b6",
       "css": "menu",
       "code": 9776,
-      "src": "entypo"
-    },
-    {
-      "uid": "c3e5dafba1739ef33cc574c7484febf7",
-      "css": "quote",
-      "code": 10078,
       "src": "entypo"
     },
     {

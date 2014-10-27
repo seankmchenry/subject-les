@@ -20,16 +20,16 @@
 .slider__arrows-item {
   position: absolute;
   display: block;
-  margin-bottom: -20px;
+  margin-bottom: -40px;
   padding: 20px;
 }
 .slider__arrows-item--right {
   bottom: 50%;
-  right: 15px;
+  right: 0;
 }
 .slider__arrows-item--left {
   bottom: 50%;
-  left: 15px;
+  left: 0;
 }
 .slider__nav {
   position: absolute;

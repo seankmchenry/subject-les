@@ -59,7 +59,7 @@
 
 <script>
 /* Headroom */
-var myElement = document.getElementById("masthead");
+var myElement = document.querySelector(".site-header");
 var headroom  = new Headroom(myElement);
 headroom.init();
 </script>
