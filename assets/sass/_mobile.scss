@@ -23,16 +23,29 @@ body {
 /*--------------------------------------------------------------
 Header
 --------------------------------------------------------------*/
-.site-branding {
-	display: none;
-}
-.main-navigation {
+.site-header {
 	position: fixed;
 	top: 0; left: 0;
 	width: 100%;
 	z-index: 9999;
 	padding: 1.0em 0;
 	background-color: rgba(0, 0, 0, 0.75);
+}
+.headroom {
+	transition: transform 200ms linear;
+}
+.headroom--pinned {
+	//display: block;
+	transform: translateY(0%);
+}
+.headroom--unpinned {
+	//display: none;
+	transform: translateY(-100%);
+}
+.site-branding {
+	display: none;
+}
+.main-navigation {
 	ul {
 		text-align: center;
 	}

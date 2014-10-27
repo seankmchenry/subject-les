@@ -9,9 +9,9 @@ jQuery(document).ready(function($){
 	var x = $( window ).height();
 	var $height = x + 'px';
 	$(".top-section").css("height", $height);
-	$(".section").css("min-height", $height);
 	// apply height on desktop only
 	if ($(window).width() > 767) {
+		//$(".section").css("min-height", $height);
 		$(".press-section").css("height", $height);
 	}
 
@@ -22,7 +22,7 @@ jQuery(document).ready(function($){
 		var hash = this.hash;
 		$('html, body').animate({
 			scrollTop: $(this.hash).offset().top
-		}, 300, function(){
+		}, 400, function(){
 			window.location.hash = hash;
 		});
 	});

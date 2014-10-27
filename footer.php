@@ -57,5 +57,14 @@
 
 <?php wp_footer(); ?>
 
+<script>
+jQuery(document).ready(function($){
+	/* Headroom */
+	$('#masthead').headroom({
+		offset: 150,
+	});
+});
+</script>
+
 </body>
 </html>
