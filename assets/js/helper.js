@@ -29,6 +29,7 @@ jQuery(document).ready(function($){
 
 	/* Glide */
 	$('#gallery-slider').glide({
+		arrows: true,
 		autoplay: 7000,
 		hoverpause: true,
 		keyboard: true,

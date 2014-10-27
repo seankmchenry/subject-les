@@ -101,7 +101,7 @@ div.contrast {
 	}
 	&:hover {
 		.slider__arrows {
-			opacity: 1.0;
+			opacity: 0.5;
 			@include animate;
 		}
 	}
