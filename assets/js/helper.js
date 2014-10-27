@@ -14,6 +14,12 @@ jQuery(document).ready(function($){
 		//$(".section").css("min-height", height);
 		$(".press-section").css("height", height);
 	}
+	// close mobile menu after clicking hash links
+	if ($(window).width() < 768) {
+		$("#site-navigation li a[href^='#']").on('click', function(e) {
+			$( ".main-navigation" ).toggleClass( 'toggled' );
+		});
+	}
 
 	/* Smooth Scrolling */
 	// hat-tip: http://goo.gl/rUOedd
