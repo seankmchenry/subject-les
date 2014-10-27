@@ -147,6 +147,9 @@ Menu Section
 	li {
 		display: inline;
 		padding: 0 0.75em;
+		&.active {
+			a { color: $link-color; }
+		}
 	}
 	a {
 		display: inline-block;

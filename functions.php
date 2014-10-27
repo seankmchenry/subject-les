@@ -147,7 +147,7 @@ function _s_enqueue_scripts() {
 	/* Global */
 	wp_enqueue_script( '_s-modernizr' );
 	wp_enqueue_script( '_s-headroom' );
-	wp_enqueue_script( '_s-headroom-jq' );
+	//wp_enqueue_script( '_s-headroom-jq' );
 
 	/* Home Page */
 	if ( is_page_template( 'page-templates/home-page.php' ) ) {
