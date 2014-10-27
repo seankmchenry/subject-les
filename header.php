@@ -45,7 +45,7 @@
 		</div>
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle"><?php _e( 'Primary Menu', '_s' ); ?></button>
+			<h3 class="menu-toggle"><?php _e( 'Menu', '_s' ); ?></h3>
 			<?php // use different menu for home page
 			if ( is_front_page() ) {
 				$menu = 'home-nav';

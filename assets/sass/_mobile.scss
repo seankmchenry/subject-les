@@ -39,22 +39,18 @@ Header
 	display: none;
 }
 .main-navigation {
-	ul {
-		text-align: center;
-	}
+	text-align: center;
 	li {
 		float: none;
-		display: inline;
-		padding: 0 0.75em;
-		&.active {
-			a {
-				color: lighten($link-color, 10%);
-			}
+		padding-top: 1.0em;
+		&:first-of-type {
+			padding-top: 1.5em;
 		}
 	}
 	a {
-		display: inline-block;
+		font-weight: bold;
 		text-transform: uppercase;
+		@include antialiased;
 		&:hover,
 		&:focus {
 			color: lighten($link-color, 10%);
@@ -62,6 +58,16 @@ Header
 	}
 }
 .menu-toggle {
+	color: $link-color;
+	margin: 0;
+	font-size: 16px;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	line-height: 1.5;
+	&:hover,
+	&:focus {
+		cursor: pointer;
+	}
 }
 
 /*--------------------------------------------------------------

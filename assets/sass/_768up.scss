@@ -11,9 +11,23 @@ Global
 Header
 --------------------------------------------------------------*/
 .main-navigation {
+	ul {}
+	li {
+		padding-top: 0;
+		float: none;
+		display: inline;
+		padding: 0 0.75em;
+		&:first-of-type {
+			padding-top: 0;
+		}
+		&.active {
+			a {
+				color: lighten($link-color, 10%);
+			}
+		}
+	}
 	a {
-		font-weight: bold;
-		@include antialiased;
+		display: inline-block;
 	}
 }
 
