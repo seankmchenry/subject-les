@@ -8,6 +8,7 @@ Global
 body {
 	background: url('../img/bg.jpg') left top repeat;
 	position: relative;
+	overflow-x: hidden; // find out why the f*** this is needed
 }
 .site-content {
 	padding: 4.5em 0;
