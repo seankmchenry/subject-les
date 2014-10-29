@@ -21,7 +21,7 @@ $city_state_zip = get_field( 'city_state_and_zip' ); ?>
 
 <script type="text/javascript">
 //<![CDATA[
-function _s_google_map() {
+function initialize() {
 	var lat = <?php echo $latitude; ?>;
 	var lng = <?php echo $longitude; ?>;
 	// coordinates to latLng
@@ -31,14 +31,18 @@ function _s_google_map() {
 		zoom: 15,
 		center: latlng,
 		mapTypeId: google.maps.MapTypeId.ROADMAP,
-		scrollwheel: false
+		scrollwheel: false,
+		draggable: false,
 	};
 	//draw a map
 	var map = new google.maps.Map(document.getElementById("location"), myOptions);
 	var marker = new google.maps.Marker({
+		map: map,
 		position: map.getCenter(),
-		map: map
 	});
+	// window open by default, so add offset
+	map.panBy(0, -40);
+	// set up the info window
 	var contentString = '<div id="content">'+
 		'<h3>'+'<a href="https://www.google.com/maps/place/<?php echo urlencode( $address ); ?>" target="_blank">'+
 		'<?php echo $bar_name; ?>'+
@@ -49,12 +53,14 @@ function _s_google_map() {
 	var infowindow = new google.maps.InfoWindow({
 		content: contentString
 	});
+	// allow opening window if it's closed
 	google.maps.event.addListener(marker, 'click', function() {
 		infowindow.open(map,marker);
 	});
+	// open the info window by default
 	infowindow.open(map,marker);
 }
-// load the map
-_s_google_map();
+// initialize the map
+google.maps.event.addDomListener(window, 'load', initialize);
 //]]>
 </script>
