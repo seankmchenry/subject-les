@@ -76,6 +76,12 @@ function my_theme_register_required_plugins() {
 			'force_activation'	=> true,
 		),
 		array(
+			'name'				=> 'BackUpWordPress',
+			'slug'				=> 'backupwordpress',
+			'required'			=> true,
+			'force_activation'	=> true,
+		),
+		array(
 			'name'				=> 'BruteProtect',
 			'slug'				=> 'bruteprotect',
 			'required'			=> true,
