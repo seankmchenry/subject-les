@@ -93,6 +93,12 @@ function my_theme_register_required_plugins() {
 			'required'			=> true,
 			'force_activation'	=> true,
 		),
+		array(
+			'name'				=> 'Share Buttons by AddToAny',
+			'slug'				=> 'add-to-any',
+			'required'			=> true,
+			'force_activation'	=> false,
+		),
 	);
 	/* if on remote server, merge local and remote plugin arrays */
 	if ( !in_array( $_SERVER['REMOTE_ADDR'], array( '::1', '127.0.0.1' ) ) ) {
