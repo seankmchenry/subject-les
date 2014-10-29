@@ -12,6 +12,13 @@ body {
 .site-content {
 	padding: 4.5em 0;
 }
+/* Admin bar fix */
+body.admin-bar {
+	//margin-top: 32px;
+	.site-header {
+		top: 32px;
+	}
+}
 
 /*--------------------------------------------------------------
 Header
