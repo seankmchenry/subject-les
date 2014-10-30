@@ -62,6 +62,14 @@
 var myElement = document.querySelector(".site-header");
 var headroom  = new Headroom(myElement);
 headroom.init();
+
+/* FitVids */
+<?php if ( !is_front_page() ) { ?>
+	jQuery(document).ready(function($){
+		$(".entry-content").fitVids();
+	});
+<?php } ?>
+
 </script>
 
 </body>

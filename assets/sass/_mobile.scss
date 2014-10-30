@@ -384,6 +384,13 @@ body.blog {
 		font-size: 1.4rem;
 	}
 }
+.entry-content {
+	img,
+	.wp-caption {
+		max-width: 100%;
+		height: auto;
+	}
+}
 .entry-meta {
 	.updated { display: none; }
 }
