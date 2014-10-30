@@ -26,7 +26,7 @@
 											<div class="excerpt">
 												<?php the_sub_field( 'review_excerpt' ); ?>
 												<?php if ( get_sub_field( 'media_outlet' ) ) { ?>
-													<span><a href=""><?php the_sub_field( 'media_outlet' ); ?></a></span>
+													<span><a href="<?php the_sub_field( 'source_link' ); ?>" target="_blank"><?php the_sub_field( 'media_outlet' ); ?></a></span>
 												<?php } ?>
 											</div>
 										<?php } ?>
